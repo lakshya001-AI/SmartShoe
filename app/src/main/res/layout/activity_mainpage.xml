@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".mainpage">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="44dp"
+        android:text="Distance (in CM)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distancetextview"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_25sdp"
+        android:text="500"
+        android:textColor="@color/white"
+        android:padding="@dimen/_15sdp"
+        android:background="@drawable/background"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        />
+
+    <TextView
+        android:id="@+id/commandtextview"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:padding="@dimen/_15sdp"
+        android:text="To get the voice command of the Distance , Click below"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distancetextview"
+        />
+
+    <ImageView
+        android:id="@+id/voicecommandimage"
+        android:layout_width="@dimen/_70sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/voice_command_image"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/commandtextview"
+        android:layout_height="@dimen/_60sdp">
+
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/signalstext"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="36dp"
+        android:text="SIGNALS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voicecommandimage" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signalstext"
+        app:layout_constraintVertical_bias="0.25">
+
+        <ImageView
+            android:id="@+id/Redcircle"
+            android:layout_width="@dimen/_55sdp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/redcircle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="@dimen/_55sdp">
+
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/Orangecircle"
+            android:layout_width="@dimen/_55sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/orangecircle"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="@dimen/_55sdp">
+
+
+        </ImageView>
+        <ImageView
+        android:id="@+id/Greencircle"
+        android:layout_width="@dimen/_55sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/greencircle"
+            android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="@dimen/_55sdp">
+
+
+    </ImageView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
